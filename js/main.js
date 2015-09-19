@@ -1,5 +1,6 @@
 $(document).ready(function() {
     
+	
 
     var masterurl = "https://spreadsheets.google.com/feeds/list/18wSsuoh49ZMTeFRDEv7oDPWBrxf-4AWDYVIpfTle3b0/default/public/values?alt=json";
 	$.getJSON(masterurl, function(data) {
@@ -16,9 +17,14 @@ $(document).ready(function() {
 
 		$('#fullpage').fullpage({
     		anchors: ['coverPage', 'navPage', 'sections'],
-    		scrollOverflow: true
+    		scrollOverflow: true,
+    		loopHorizontal: false
     	});
+
+    	//$(".content-item").hover(function() {$(this).css("background-color: white;"); console.log(this);}, function() {$(this).css("background-color: transparent;");});
 	});
+
+
 });
 
 function clean_google_sheet_json(data){
