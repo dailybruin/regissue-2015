@@ -4,13 +4,21 @@
 	<!-- css -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.1/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,200,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+    
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <!--attributes-->
+    <link rel="icon" type="image/png" href="http://dailybruin.com/img/favicons/favicon-96x96.png">
+    <meta property="og:image" content="http://dailybruin.com/images/2015/09/main-reg-15-cover.jpg" />
 
     <!-- JQUERY -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 	<!--FullPage-->    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.1/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.6/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.min.js"></script>
 
 	<!--Foundation-->   
@@ -20,9 +28,11 @@
 
     <script id="content-template" type="text/x-handlebars-template">
         <a href="{{story-link}}">
-            <div class="{{section}}-item">
+            <div class="content-item">
                 <p class="headline">{{headline}}</p>
-                <p class="author">{{author}}</p>
+                {{#if author.length}}
+                    <p class="author">By {{author}}</p>
+                {{/if}}
             </div>
         </a>
         <hr>
@@ -33,6 +43,9 @@
 <body>
     <div id="fullpage">
         <!-- TITLE PAGE HERE -->
+        <a href="http://www.dailybruin.com">
+            <img src="http://dailybruin.com/images/2015/05/db_logo_B.png" id="dblogo">
+        </a>
         <div class="section" id="main-title">
             <h3>Daily Bruin Registration Issue 2015</h3>
             <h1>Where to?</h1>
@@ -41,24 +54,24 @@
         <!-- NAVIGATION PAGE HERE -->
         <div class="section">
             <a href="#sections/news">
-                <div class="small-12 medium-3 columns navpanel" id="news-nav">
-                    First Section
+                <div class="small-12 medium-12 large-3 columns navpanel" id="news-nav">
+                    <h2>NEWS</h2>
                 </div>
             </a>
             <a href="#sections/op">
-                <div class="small-12 medium-3 columns navpanel" id="opinion-nav">
-                    Second Section
+                <div class="small-12 medium-12 large-3 columns navpanel" id="opinion-nav">
+                    <h2>OPINION</h2>
                 </div>
             </a>
             <a href="#sections/ae">
-                <div class="small-12 medium-3 columns navpanel" id="ae-nav">
-                    Third Section
+                <div class="small-12 medium-12 large-3 columns navpanel" id="ae-nav">
+                    <h2>ARTS &#38; ENTERTAINMENT</h2>
                 </div>
             </a>
             
             <a href="#sections/sports">
-                <div class="small-12 medium-3 columns navpanel" id="sports-nav">
-                    Fourth Section
+                <div class="small-12 medium-12 large-3 columns navpanel" id="sports-nav">
+                    <h2>SPORTS</h2>
                 </div>
             </a>
         </div>
@@ -68,25 +81,56 @@
         <div class="section">
 
             <!-- NEWS LINKS -->
-            <div class="slide content" data-anchor="news" id="news-section">
+            <div class="slide content" data-anchor="news" id="news-content">
+                <div id="news-section">
+                    <h2>News</h2>
+                    <hr>
+                </div>
+                <footer>
 
+                <p>Page developed by <a href="mailto:jbrundrett@media.ucla.edu"> Julien Brundrett</a>, <a href="mailto:vzhang@media.ucla.edu"> Vivian Zhang</a> and <a href="mailto:cfong@media.ucla.edu"> Colin Fong</a>. &copy; 2015 <a href="http://dailybruin.com/">Daily Bruin</a>.</p>
+                </footer>
             </div>
 
             <!-- OPINION LINKS -->
-            <div class="slide content" data-anchor="opinion" id="opinion-section">
-                
+            <div class="slide content" data-anchor="opinion" id="opinion-content">
+                <div id="opinion-section">
+                    <h2>Opinion</h2>
+                    <hr>
+                </div>
+                <footer>
+
+                <p>Page developed by <a href="mailto:jbrundrett@media.ucla.edu"> Julien Brundrett</a>, <a href="mailto:vzhang@media.ucla.edu"> Vivian Zhang</a> and <a href="mailto:cfong@media.ucla.edu"> Colin Fong</a>. &copy; 2015 <a href="http://dailybruin.com/">Daily Bruin</a>.</p>
+                </footer>
             </div>
 
             <!-- AE LINKS -->
-            <div class="slide content" data-anchor="ae" id="ae-section">
-                
+            <div class="slide content" data-anchor="ae" id="ae-content">
+                <div id="ae-section">
+                    <h2>Arts &#38; Entertainment</h2>
+                    <hr>
+                </div>
+                <footer>
+
+                <p>Page developed by <a href="mailto:jbrundrett@media.ucla.edu"> Julien Brundrett</a>, <a href="mailto:vzhang@media.ucla.edu"> Vivian Zhang</a> and <a href="mailto:cfong@media.ucla.edu"> Colin Fong</a>. &copy; 2015 <a href="http://dailybruin.com/">Daily Bruin</a>.</p>
+                </footer>
             </div>
 
             <!-- SPORTS LINKS -->
-            <div class="slide content" data-anchor="sports" id="sports-section">
-                
+            <div class="slide content" data-anchor="sports" id="sports-content">
+                <div id="sports-section">
+                    <h2>Sports</h2>
+                    <hr>
+                </div>
+                <footer>
+
+                <p>Page developed by <a href="mailto:jbrundrett@media.ucla.edu"> Julien Brundrett</a>, <a href="mailto:vzhang@media.ucla.edu"> Vivian Zhang</a> and <a href="mailto:cfong@media.ucla.edu"> Colin Fong</a>. &copy; 2015 <a href="http://dailybruin.com/">Daily Bruin</a>.</p>
+                </footer>
             </div>
+
+        
         </div>
     </div>
 </body>
+
 </html>

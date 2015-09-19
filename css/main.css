@@ -2,8 +2,56 @@
 	height: 100%;
 }
 
+footer{
+	text-align: center;
+	color: white;
+    background-color: rgba(50, 50, 50, 0.7);
+}
+footer a{
+	color: rgb(180,180,180);
+}
+
+#dblogo {
+    position: fixed;
+    left: 0;
+    border: 0;
+    padding: 5px;
+    height: 50px;
+    z-index: 100;
+}
+.headline {
+	font-family: 'Roboto Slab', serif;
+	color: black;
+	font-size: 1.5rem;
+	margin-bottom: 0px;
+}
+
+.author {
+	margin-left: 2rem;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	color: black;
+}
+
+.navpanel h2 {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: 300;
+    font-size: 3.4rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
 .content {
-	padding: 2rem;
+	padding: 0rem 6rem 2rem 6rem;
+}
+
+.fp-controlArrow.fp-next {
+	border-color: transparent transparent transparent rgba(255,255,255,0.7);
+}
+.fp-controlArrow.fp-prev {
+	border-color: transparent rgba(255,255,255,0.7) transparent transparent;
 }
 
 #main-title {
@@ -13,12 +61,26 @@
 	background-position: center center;
 }
 
-#news-nav {
-	background-image: url('http://dailybruin.com/images/2015/09/news-cover-web.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
+#main-title h3{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size:30px;
+	font-weight: 200;
+	color:white;
+	margin-left: 55%;
+	padding-left: 5px;
+	background-color: rgba(130, 130, 130, 0.5);
+
 }
+
+#main-title h1{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color:white;
+	font-weight: 300;
+	font-size:80px;
+	margin-left: 55%;
+}
+
+
 
 #opinion-nav {
 	background-image: url('http://dailybruin.com/images/2015/09/opinion-cover-web.jpg');
@@ -27,7 +89,33 @@
 	background-position: 70% center;
 }
 
+#opinion-section {
+	padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 2rem;
+}
+
+#opinion-content {
+	background-image: url('http://dailybruin.com/images/2015/09/opinion-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
 #ae-nav {
+	background-image: url('http://dailybruin.com/images/2015/09/ae-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#ae-section {
+	padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 2rem;
+}
+
+#ae-content {
 	background-image: url('http://dailybruin.com/images/2015/09/ae-cover-web.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -41,23 +129,108 @@
 	background-position: center center;
 }
 
+#sports-section {
+	padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 2rem;
+}
+
+#sports-content {
+	background-image: url('http://dailybruin.com/images/2015/09/sports-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#news-nav {
+	background-image: url('http://dailybruin.com/images/2015/09/news-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#news-section {
+	padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 2rem;
+}
+
+#news-content {
+	background-image: url('http://dailybruin.com/images/2015/09/news-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
 
 @media only screen and (min-width: 64.063em) { 
 	#main-title {
 		background-position-y: 33%;
 	}
+
+	.navpanel h2 {
+		transform: rotate(90deg);
+		font-size: 4.5rem;
+	}
+
+	#news-nav h2 {
+		bottom: 76%;
+    	left: -8%;
+	}
+
+	#opinion-nav h2 {
+		bottom: 72%;
+		left: -20%;
+	}
+
+	#ae-nav h2 {
+	    bottom: 40%;
+	    left: -25%;
+	    line-height: 5rem;
+	}
+
+	#sports-nav h2 {
+		bottom: 51%;
+    	left: -6%;
+	}
+
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 64em) {
 	.navpanel {
 		height: 25%;
 	}
 
+#main-title h3{
+	font-size:60px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 70%;
+	background-color: rgba(80, 80, 80, 0.5);
+
+}
+
+#main-title h1{
+	font-size:200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
 	#opinion-nav {
-		background-position: 50% 28%;
+		background-position: 50% 22%;
+	}
+
+	#news-nav {
+		background-position: 50% 38%;
+	}
+
+	#sports-nav {
+		background-position: 50% 53%;
 	}
 
 	#ae-nav {
-		background-position: 50% 20%;
+		background-position: 50% 27%;
 	}
 }
