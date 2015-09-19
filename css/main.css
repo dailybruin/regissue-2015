@@ -22,6 +22,22 @@
 	background-position: center center;
 }
 
+#main-title h3{
+
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: 200;
+	color:white;
+	margin-left: 55%;
+}
+
+#main-title h1{
+
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: 300;
+	color:white;
+	margin-left: 55%;
+}
+
 #news-nav {
 	background-image: url('http://dailybruin.com/images/2015/09/news-cover-web.jpg');
 	background-size: cover;
@@ -49,6 +65,8 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 }
+
+
 
 
 @media only screen and (min-width: 64.063em) { 
