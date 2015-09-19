@@ -1,0 +1,63 @@
+.navpanel {
+	height: 100%;
+}
+
+.content {
+	padding: 2rem;
+}
+
+#main-title {
+	background-image: url('http://dailybruin.com/images/2015/09/main-reg-15-cover.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#news-nav {
+	background-image: url('http://dailybruin.com/images/2015/09/news-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#opinion-nav {
+	background-image: url('http://dailybruin.com/images/2015/09/opinion-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 70% center;
+}
+
+#ae-nav {
+	background-image: url('http://dailybruin.com/images/2015/09/ae-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#sports-nav {
+	background-image: url('http://dailybruin.com/images/2015/09/sports-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+@media only screen and (min-width: 64.063em) { 
+	#main-title {
+		background-position-y: 33%;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	.navpanel {
+		height: 25%;
+	}
+
+	#opinion-nav {
+		background-position: 50% 28%;
+	}
+
+	#ae-nav {
+		background-position: 50% 20%;
+	}
+}

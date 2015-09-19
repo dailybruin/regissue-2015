@@ -11,57 +11,80 @@
 
 	<!--FullPage-->    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.1/jquery.fullPage.js"></script>
-   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.min.js"></script>
+
 	<!--Foundation-->   
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
 
 	<script type="text/javascript" src="js/main.js"></script>
+
+    <script id="content-template" type="text/x-handlebars-template">
+        <a href="{{story-link}}">
+            <div class="{{section}}-item">
+                <p class="headline">{{headline}}</p>
+                <p class="author">{{author}}</p>
+            </div>
+        </a>
+        <hr>
+    </script>
+
 </head>
 
 <body>
     <div id="fullpage">
         <!-- TITLE PAGE HERE -->
         <div class="section" id="main-title">
-            Main Page, Please continue down!
+            <h3>Daily Bruin Registration Issue 2015</h3>
+            <h1>Where to?</h1>
         </div>
 
         <!-- NAVIGATION PAGE HERE -->
         <div class="section">
-            <div class="medium-3 columns" id="news-nav">
-                <a href="#firstPage">First Section</a>
-            </div>
-            <div class="medium-3 columns" id="opinion-nav">
-                <a href="#firstPage/1">Second Section</a>
-            </div>
-            <div class="medium-3 columns" id="ae-nav">
-                <a href="#firstPage/2">Third Section</a>
-            </div>
-            <div class="medium-3 columns" id="sports-nav">
-                <a href="#firstPage/3">Fourth Section</a>
-            </div>
+            <a href="#sections/news">
+                <div class="small-12 medium-3 columns navpanel" id="news-nav">
+                    First Section
+                </div>
+            </a>
+            <a href="#sections/op">
+                <div class="small-12 medium-3 columns navpanel" id="opinion-nav">
+                    Second Section
+                </div>
+            </a>
+            <a href="#sections/ae">
+                <div class="small-12 medium-3 columns navpanel" id="ae-nav">
+                    Third Section
+                </div>
+            </a>
+            
+            <a href="#sections/sports">
+                <div class="small-12 medium-3 columns navpanel" id="sports-nav">
+                    Fourth Section
+                </div>
+            </a>
         </div>
+
 
         <!-- LINKS PAGE HERE -->
         <div class="section">
 
             <!-- NEWS LINKS -->
-            <div class="slide">
-                Section 2 Slide 1
+            <div class="slide content" data-anchor="news" id="news-section">
+
             </div>
 
             <!-- OPINION LINKS -->
-            <div class="slide">
-                Section 2 Slide 2
+            <div class="slide content" data-anchor="opinion" id="opinion-section">
+                
             </div>
 
             <!-- AE LINKS -->
-            <div class="slide">
-                Section 2 Slide 3
+            <div class="slide content" data-anchor="ae" id="ae-section">
+                
             </div>
 
             <!-- SPORTS LINKS -->
-            <div class="slide">
-                Section 2 Slide 3
+            <div class="slide content" data-anchor="sports" id="sports-section">
+                
             </div>
         </div>
     </div>
