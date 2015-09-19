@@ -39,10 +39,10 @@
 }
 
 .fp-controlArrow.fp-next {
-	border-color: transparent transparent transparent #3C3C3C;
+	border-color: transparent transparent transparent rgba(255,255,255,0.7);
 }
 .fp-controlArrow.fp-prev {
-	border-color: transparent #3C3C3C transparent transparent;
+	border-color: transparent rgba(255,255,255,0.7) transparent transparent;
 }
 
 #main-title {
@@ -82,7 +82,7 @@
 
 #opinion-section {
 	padding: 3rem;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.7);
     margin: 2rem;
 }
 
@@ -174,7 +174,7 @@
 	}
 
 	#ae-nav h2 {
-	    bottom: 35%;
+	    bottom: 56%;
 	    left: -25%;
 	    line-height: 5rem;
 	}
