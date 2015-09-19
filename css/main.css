@@ -12,7 +12,14 @@
 }
 
 .content {
-	padding: 2rem;
+	padding: 1rem 6rem 1rem 6rem;
+}
+
+.fp-controlArrow.fp-next {
+	border-color: transparent transparent transparent #3C3C3C;
+}
+.fp-controlArrow.fp-prev {
+	border-color: transparent #3C3C3C transparent transparent;
 }
 
 #main-title {
