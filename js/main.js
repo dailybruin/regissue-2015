@@ -15,7 +15,8 @@ $(document).ready(function() {
 		});
 
 		$('#fullpage').fullpage({
-    	anchors: ['coverPage', 'navPage', 'sections']
+    		anchors: ['coverPage', 'navPage', 'sections'],
+    		scrollOverflow: true
     	});
 	});
 });
