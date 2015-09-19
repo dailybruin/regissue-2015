@@ -48,16 +48,24 @@
 	}
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 64em) {
 	.navpanel {
 		height: 25%;
 	}
 
 	#opinion-nav {
-		background-position: 50% 28%;
+		background-position: 50% 22%;
+	}
+
+	#news-nav {
+		background-position: 50% 38%;
+	}
+
+	#sports-nav {
+		background-position: 50% 53%;
 	}
 
 	#ae-nav {
-		background-position: 50% 20%;
+		background-position: 50% 27%;
 	}
 }
