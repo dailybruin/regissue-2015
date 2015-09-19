@@ -2,6 +2,15 @@
 	height: 100%;
 }
 
+.navpanel h2 {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: 300;
+    font-size: 3.4rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
 .content {
 	padding: 2rem;
 }
@@ -46,6 +55,33 @@
 	#main-title {
 		background-position-y: 33%;
 	}
+
+	.navpanel h2 {
+		transform: rotate(90deg);
+		font-size: 4.5rem;
+	}
+
+	#news-nav h2 {
+		bottom: 76%;
+    	left: -8%;
+	}
+
+	#opinion-nav h2 {
+		bottom: 72%;
+		left: -20%;
+	}
+
+	#ae-nav h2 {
+	    bottom: 35%;
+	    left: -25%;
+	    line-height: 5rem;
+	}
+
+	#sports-nav h2 {
+		bottom: 51%;
+    	left: -6%;
+	}
+
 }
 
 @media only screen and (max-width: 64em) {
