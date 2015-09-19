@@ -2,6 +2,21 @@
 	height: 100%;
 }
 
+.headline {
+	font-family: 'Roboto Slab', serif;
+	color: black;
+	font-size: 1.5rem;
+	margin-bottom: 0px;
+}
+
+.author {
+	margin-left: 2rem;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	color: black;
+}
+
 .navpanel h2 {
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 300;
@@ -12,7 +27,7 @@
 }
 
 .content {
-	padding: 1rem 6rem 1rem 6rem;
+	padding: 0rem 6rem 2rem 6rem;
 }
 
 .fp-controlArrow.fp-next {
@@ -48,12 +63,7 @@
 	margin-left: 55%;
 }
 
-#news-nav {
-	background-image: url('http://dailybruin.com/images/2015/09/news-cover-web.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
+
 
 #opinion-nav {
 	background-image: url('http://dailybruin.com/images/2015/09/opinion-cover-web.jpg');
@@ -62,7 +72,33 @@
 	background-position: 70% center;
 }
 
+#opinion-section {
+	padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 2rem;
+}
+
+#opinion-content {
+	background-image: url('http://dailybruin.com/images/2015/09/opinion-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
 #ae-nav {
+	background-image: url('http://dailybruin.com/images/2015/09/ae-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#ae-section {
+	padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 2rem;
+}
+
+#ae-content {
 	background-image: url('http://dailybruin.com/images/2015/09/ae-cover-web.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -76,8 +112,38 @@
 	background-position: center center;
 }
 
+#sports-section {
+	padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 2rem;
+}
 
+#sports-content {
+	background-image: url('http://dailybruin.com/images/2015/09/sports-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
 
+#news-nav {
+	background-image: url('http://dailybruin.com/images/2015/09/news-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#news-section {
+	padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 2rem;
+}
+
+#news-content {
+	background-image: url('http://dailybruin.com/images/2015/09/news-cover-web.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
 
 @media only screen and (min-width: 64.063em) { 
 	#main-title {

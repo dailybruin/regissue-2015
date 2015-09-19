@@ -5,7 +5,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.1/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css" />
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,200,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+    
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+
 
     <!-- JQUERY -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -22,9 +25,11 @@
 
     <script id="content-template" type="text/x-handlebars-template">
         <a href="{{story-link}}">
-            <div class="{{section}}-item">
+            <div class="content-item">
                 <p class="headline">{{headline}}</p>
-                <p class="author">{{author}}</p>
+                {{#if author.length}}
+                    <p class="author">By {{author}}</p>
+                {{/if}}
             </div>
         </a>
         <hr>
@@ -70,23 +75,35 @@
         <div class="section">
 
             <!-- NEWS LINKS -->
-            <div class="slide content" data-anchor="news" id="news-section">
-
+            <div class="slide content" data-anchor="news" id="news-content">
+                <div id="news-section">
+                    <h2>News</h2>
+                    <hr>
+                </div>
             </div>
 
             <!-- OPINION LINKS -->
-            <div class="slide content" data-anchor="opinion" id="opinion-section">
-                
+            <div class="slide content" data-anchor="opinion" id="opinion-content">
+                <div id="opinion-section">
+                    <h2>Opinion</h2>
+                    <hr>
+                </div>
             </div>
 
             <!-- AE LINKS -->
-            <div class="slide content" data-anchor="ae" id="ae-section">
-                
+            <div class="slide content" data-anchor="ae" id="ae-content">
+                <div id="ae-section">
+                    <h2>Arts &#38; Entertainment</h2>
+                    <hr>
+                </div>
             </div>
 
             <!-- SPORTS LINKS -->
-            <div class="slide content" data-anchor="sports" id="sports-section">
-                
+            <div class="slide content" data-anchor="sports" id="sports-content">
+                <div id="sports-section">
+                    <h2>Sports</h2>
+                    <hr>
+                </div>
             </div>
         </div>
     </div>
