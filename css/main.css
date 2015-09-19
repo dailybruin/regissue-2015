@@ -30,18 +30,21 @@
 }
 
 #main-title h3{
-
 	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size:30px;
 	font-weight: 200;
 	color:white;
 	margin-left: 55%;
+	padding-left: 5px;
+	background-color: rgba(130, 130, 130, 0.5);
+
 }
 
 #main-title h1{
-
 	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight: 300;
 	color:white;
+	font-weight: 300;
+	font-size:80px;
 	margin-left: 55%;
 }
 
@@ -113,6 +116,24 @@
 	.navpanel {
 		height: 25%;
 	}
+
+#main-title h3{
+	font-size:60px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 70%;
+	background-color: rgba(80, 80, 80, 0.5);
+
+}
+
+#main-title h1{
+	font-size:200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
 
 	#opinion-nav {
 		background-position: 50% 22%;
