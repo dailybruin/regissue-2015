@@ -2,6 +2,14 @@
 	height: 100%;
 }
 
+#dblogo {
+    position: fixed;
+    left: 0;
+    border: 0;
+    padding: 5px;
+    height: 50px;
+    z-index: 100;
+}
 .headline {
 	font-family: 'Roboto Slab', serif;
 	color: black;
